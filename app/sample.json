@@ -1,0 +1,46 @@
+{
+
+	"widget": [{
+            "id": "1",
+			"name": "widget 1",
+			"number": "1234",
+			"keyvaluepair": [
+                {"first": "deddy"},
+				{"last": "bear"},
+                {"color": "brown"}
+            ]
+		},
+		{
+            "id":"2",
+			"name": "widget 2",
+			"number": "5367",
+			"keyvaluepair": [
+                {"first": "dom"},
+				{"last": "chery"},
+				{"color": "white"}
+            ]
+		},
+		{
+            "id": "3",
+			"name": "My special wiget",
+			"number": "3546",
+			"keyvaluepair": [
+                {"first": "Rajan"},
+				{"last": "Paul"},
+                {"color": "white"}
+            ]
+		},
+		{
+			"id": "4",
+			"name": "Your special wiget",
+			"number": "7835",
+			"keyvaluepair": [
+                {"first": "test"},
+				{"last": "tes"},
+                {"color": "test"}
+            ]
+		
+		}
+
+	]
+}

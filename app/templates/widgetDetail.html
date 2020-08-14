@@ -1,0 +1,30 @@
+<div class="widgetDetails">
+
+  <fieldset class="fdsClass">
+    <button type="button" class="close" ng-click="close()">
+      <span class="closeBtn">×</span>
+    </button>
+    <legend class="legClass">{{currentWidget.name}} Details </legend>
+    <div class="widgetInfo">
+      <span class="widgetNameTitle">Name:</span>
+      <span class="widgetName">{{currentWidget.name}}</span>
+    </div>
+    <div class="widgetInfo">
+      <span class="widgetNoTitle">Number:</span>
+      <span class="widgetNo">{{currentWidget.number  | words }}</span>
+    </div>
+    <div class="widgetInfo">
+      Key / value Pairs
+    </div>
+    <div>
+      <div class="keyPair" ng-repeat="widget in keyValPair">
+        <div ng-repeat="(key, value) in widget">
+          {{$parent.$index+1}}. {{key}} : {{value}}
+        </div>
+      </div>
+      <div class="editBtn">
+        <button type="button" class="btn btn-primary" ng-click="editWidget(currentWidget.id)">Edit</button>
+      </div>
+    </div>
+  </fieldset>
+</div>

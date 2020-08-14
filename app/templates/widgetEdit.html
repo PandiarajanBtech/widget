@@ -1,0 +1,40 @@
+<div class="widgetDetails">
+        <fieldset class="fdsClass">
+                <legend class="legClass">{{currentWidget.name}} Details </legend>
+                <form >
+                <div class="widgetInfo">
+                        <span class="widgetNameTitle">Name:</span>
+                        <span class="widgetName"><input type="text" ng-model="name"
+                                        ng-value=currentWidget.name /></span>
+                </div>
+                <div class="widgetInfo">
+                        <span class="widgetNoTitle">Number:</span>
+                        <span class="widgetNo"><input type="text" ng-model="number"
+                                        ng-value=currentWidget.number /></span>
+                </div>
+                <div class="widgetInfo">
+                        Key / value Pairs
+                </div>
+                <div>
+                        <div class="keyPair" ng-repeat="widget in keyValPair">
+                                <div ng-repeat="(widgetKey, widgetValue) in widget">
+                                        <span> {{$parent.$index+1}}</span>.
+                                        <span class="pdcls">
+                                        <input type="text" ng-model="addKey[$parent.$index]" ng-value=widgetKey /> </span>
+                                        <span class="pdcls"> <input type="text" ng-model="addValue[$parent.$index]" ng-value="widgetValue" /></span>
+                                        <span class="pdcls"><button ng-click="addMore()"> + </button></span>
+                                        <span class="pdcls"><button ng-click="remove($parent.$index)"> -
+                                                </button></span>
+                                        
+                                </div>
+                                <br>
+                        </div>
+                        <div class="editBtn">
+                                <button type="button" class="btn btn-secondary" ng-click="cancel(currentWidget.id)">cancel</button>
+                                <button type="button" class="btn btn-primary"
+                                ng-click="editWidget(currentWidget.id)" >Save</button>
+                        </div>
+                </div>
+                </form>
+        </fieldset>
+</div>

@@ -1,0 +1,41 @@
+<!-- about.html -->
+<div class="" >
+    <fieldset class="fdsClass">
+        <legend>Widget Summary</legend>
+        <div class="widgetRow border-light" ng-repeat="(key, value) in widgetInfo.widget">
+            <div class="widgetTitle">
+                <span >
+                    {{value.name}}
+                </span>
+            </div>
+            <div class="widgetBtn">            
+                <span class="widgetDetailBtn">
+                    <button type="button" class="btn btn-primary" ng-click="widgetDetail(value.id)">
+                        Details
+                    </button>
+                </span>
+                <span class="widgetDeleteBtn">
+                    <button type="button" class="btn btn-danger" ng-click="deleteWidget(value.id)">Delete</button>
+                </span>
+            </div>
+        </div> 
+    </fieldset>
+    <div class="widgetAddBtn">
+        <button type="button" class="btn btn-info" ng-click="addWdiget()">Add Widget</button>
+    </div>
+</div>
+
+<div class="row">
+    <!-- col1 -->
+    <div class="col-sm-6">
+        <div ui-view="widgetSummary"></div>
+    </div>  
+    <!-- col2 -->
+    <div class="col-sm-6">
+        <div ui-view="widgetDetail"></div>
+    </div>
+    <!-- bottom row -->
+    <div class="col-sm-12 text-center">
+        <div ui-view="widgetEdit"></div>
+    </div>
+</div>  

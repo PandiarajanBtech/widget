@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "description": "A starter project for AngularJS",
-  "repository": "",
+  "repository": "https://github.com/PandiarajanBtech/widget.git",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.7.5",

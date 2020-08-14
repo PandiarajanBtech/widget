@@ -1,0 +1,73 @@
+/* app css stylesheet */
+.widgetTitle {
+  width:50%;
+  display:inline-block;
+  padding-bottom: 5px;
+  padding-top:5px;  
+  padding-left: 10px;
+}
+.widgetBtn {
+  width:50%;
+  display:inline-block;
+  float: right;
+  text-align: right;
+  padding-right: 10px;
+  padding-top:5px;
+  padding-bottom: 5px;
+}
+.widgetDetailBtn {
+  width:20%;
+}
+.widgetDeleteBtn {
+  width:20%;
+}
+.widgetAddBtn {
+  margin-top: 10px;
+}
+.widgetDetail {
+  width:100%;
+}
+.widgetRow {
+  display: inline-block;
+  width: 100%;
+}
+.border-light {
+  border: 1px solid black;
+}
+.widgetInfo {
+  margin: 5px;
+}
+.widgetTitlewidgetName {
+  padding-left:12px;
+}
+.keyPair {
+  padding-left:2px;
+}
+.editBtn {
+ float:right;
+}
+.fdsClass {
+  border:1px solid #999; 
+  border-radius:8px; 
+  padding:6px;
+}
+.legClass {
+  border-bottom: 0px !important;
+}
+legend {
+  width: auto;
+  border: none;
+}
+.keyPair span {
+  margin-bottom: 2px;
+}
+.widgetName {
+  margin-left: 13px;
+}
+.pdcls {
+  padding-bottom: 10px;
+}
+.closeBtn {
+  position: relative;
+  bottom: 38px;
+}
